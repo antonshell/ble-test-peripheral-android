@@ -1,0 +1,154 @@
+<!--
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<!-- TODO(g-ortuno): Remove FragmentLayout since it's not necessary -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="io.github.webbluetoothcg.bletestperipheral.BleuServiceFragment">
+
+    <RelativeLayout android:id="@+id/client1_tx_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/client1_tx_label"
+            android:text="@string/client1_tx"
+            android:textAppearance="@style/subheader"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"/>
+
+        <EditText
+            android:id="@+id/client1_tx_value"
+            android:ems="3"
+            android:maxLength="3"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/client1_tx_label"/>
+        <Button
+            android:id="@+id/client1_tx_notify"
+            android:textColor="@color/accent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update"
+            android:layout_toEndOf="@+id/client1_tx_value"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/client1_rx_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/client1_tx_layout">
+        <TextView
+            android:id="@+id/client1_rx_label"
+            android:text="@string/client1_tx"
+            android:textAppearance="@style/subheader"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"/>
+
+        <EditText
+            android:id="@+id/client1_rx_value"
+            android:ems="3"
+            android:maxLength="3"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/client1_rx_label"/>
+        <Button
+            android:id="@+id/client1_rx_notify"
+            android:textColor="@color/accent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update"
+            android:layout_toEndOf="@+id/client1_rx_value"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/client2_tx_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/client1_rx_layout">
+        <TextView
+            android:id="@+id/client2_tx_label"
+            android:text="@string/client1_tx"
+            android:textAppearance="@style/subheader"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"/>
+
+        <EditText
+            android:id="@+id/client2_tx_value"
+            android:ems="3"
+            android:maxLength="3"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/client2_tx_label"/>
+        <Button
+            android:id="@+id/client2_tx_notify"
+            android:textColor="@color/accent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update"
+            android:layout_toEndOf="@+id/client2_tx_value"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/client2_rx_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/client2_tx_layout">
+        <TextView
+            android:id="@+id/client2_rx_label"
+            android:text="@string/client1_tx"
+            android:textAppearance="@style/subheader"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"/>
+
+        <EditText
+            android:id="@+id/client2_rx_value"
+            android:ems="3"
+            android:maxLength="3"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/client2_rx_label"/>
+        <Button
+            android:id="@+id/client2_rx_notify"
+            android:textColor="@color/accent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update"
+            android:layout_toEndOf="@+id/client2_rx_value"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/chars_debug_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/client2_rx_layout">
+        <Button
+            android:id="@+id/chars_debug_btn"
+            android:textColor="@color/accent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/debug_characteristics"/>
+    </RelativeLayout>
+
+</RelativeLayout>

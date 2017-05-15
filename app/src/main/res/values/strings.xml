@@ -17,7 +17,7 @@
     <string name="app_name">BLE Peripheral Simulator</string>
     <string name="title_activity_peripherals">Peripherals</string>
     <string name="title_activity_peripheral">Peripheral</string>
-    <string name="notify">Notify</string>
+    <string name="update">Update</string>
 
     <!-- Bluetooth -->
     <string name="bluetoothNotSupported">BLE Peripheral Simulator closing: Bluetooth Not Supported</string>
@@ -64,4 +64,6 @@
         discoverable.
     </string>
     <string name="menu_disconnect_devices">Disconnect Devices</string>
+    <string name="client1_tx">Client1 TX</string>
+    <string name="debug_characteristics">Debug Characteristics</string>
 </resources>

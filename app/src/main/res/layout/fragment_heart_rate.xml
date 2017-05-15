@@ -87,6 +87,6 @@
             android:textColor="@color/accent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/notify"
+            android:text="@string/update"
             android:layout_below="@id/gridLayout_characteristicsValues"/>
 </RelativeLayout>

@@ -173,6 +173,9 @@ public class BatteryServiceFragment extends ServiceFragment {
   private void setBatteryLevel(int newBatteryLevel, View source) {
     mBatteryLevelCharacteristic.setValue(newBatteryLevel,
         BluetoothGattCharacteristic.FORMAT_UINT8, /* offset */ 0);
+    mDelegate.sendNotificationToDevices(mBatteryLevelCharacteristic);
+
+
     if (source != mBatteryLevelSeekBar) {
       mBatteryLevelSeekBar.setProgress(newBatteryLevel);
     }
